@@ -137,7 +137,7 @@ https://www.tooplate.com/view/2113-earth
                             $nr=count($post);
                             $to_wright="";
                         for ($i=0;$i<9;$i++){
-                            
+
                             $url="./storage/".$post[$i]->url;
                             $full_post="./post/".$post[$i]->id;
                             $titlu=$post[$i]->title;
@@ -246,7 +246,7 @@ https://www.tooplate.com/view/2113-earth
             log: function() { }
         };
     }
-    function getMyPics(){
+    /*function getMyPics(){
 
         fetch("./post").then(function(response) {
             console.log(response);
@@ -291,7 +291,7 @@ https://www.tooplate.com/view/2113-earth
                 }
             })
         });
-    }
+    }*/
 </script>
 </div>
 </body>

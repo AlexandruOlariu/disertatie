@@ -14,8 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',function (){
-    return view('welcome');
+    try {
+        $post=\App\Models\Post::all();
+    }catch (\Exception $e){
+        $post="NU MERGE";
+    }
+
+    return view('welcome',compact('post'));
 });
+
 Auth::routes();
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
@@ -35,4 +42,4 @@ Route::get('register',function (){
 
 
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::any('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Intervention\Image\Facades\Image;
 class PostController extends Controller
 {
@@ -12,6 +13,12 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function getAllPosts(){
+        $post=Post::all();
+
+        return view("welcome",['post'=>$post]);
+    }
+
     public function index()
     {
         return response()->json(Post::all(),200);
@@ -94,13 +101,19 @@ class PostController extends Controller
         return response()->json("sters",200);
     }
     public function storeImage($request,$post){
-        if($request->has('url')){
+        try{
+        if($request->has('url')) {
             $post->update([
-                'url'=>$request->url->store('uploads','public'),
+                'url' => $request->url->store('uploads', 'public'),
             ]);
-            $image=Image::make(public_path('storage/'.$post->url));//->fit(300, 300, null, 'top-left');
+            $image = Image::make(public_path('storage/' . $post->url));//->fit(300, 300, null, 'top-left');
 
             $image->save();
+        }
+        }catch (\Exception $e){
+            Log::info(public_path('storage/'));
+            Log::info(json_decode(json_encode($e->getMessage())));
+
         }
     }
     public function validateRequest($request){
