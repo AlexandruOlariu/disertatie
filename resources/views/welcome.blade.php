@@ -1,42 +1,300 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
 
-        <title>Laravel</title>
+<head>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Tooplate">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 
-        <!-- Styles -->
-        <style>
-            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-t{border-top-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}}
-        </style>
+    <title>Alex Olariu</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JX0XYGTTWZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        <style>
-            body {
-                font-family: 'Nunito';
-            }
-        </style>
-    </head>
-    <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
-            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline">Dashboard</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Log in</a>
+  gtag('config', 'G-JX0XYGTTWZ');
+</script>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/tooplate-main.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
 
 
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+</head>
+<!--
+Tooplate 2113 Earth
+https://www.tooplate.com/view/2113-earth
+-->
+<body>
+<div id="app">
+<div class="sequence">
+
+    <div class="seq-preloader">
+        <svg width="39" height="16" viewBox="0 0 39 16" xmlns="http://www.w3.org/2000/svg" class="seq-preload-indicator">
+            <g fill="#F96D38">
+                <path class="seq-preload-circle seq-preload-circle-1" d="M3.999 12.012c2.209 0 3.999-1.791 3.999-3.999s-1.79-3.999-3.999-3.999-3.999 1.791-3.999 3.999 1.79 3.999 3.999 3.999z"/>
+                <path class="seq-preload-circle seq-preload-circle-2" d="M15.996 13.468c3.018 0 5.465-2.447 5.465-5.466 0-3.018-2.447-5.465-5.465-5.465-3.019 0-5.466 2.447-5.466 5.465 0 3.019 2.447 5.466 5.466 5.466z"/>
+                <path class="seq-preload-circle seq-preload-circle-3" d="M31.322 15.334c4.049 0 7.332-3.282 7.332-7.332 0-4.049-3.282-7.332-7.332-7.332s-7.332 3.283-7.332 7.332c0 4.05 3.283 7.332 7.332 7.332z"/>
+            </g>
+        </svg>
+    </div>
+
+</div>
+
+<div class="logo">
+    <h1>Alex Olariu</h1>
+    <h2>AO</h2>
+</div>
+<nav>
+    <ul>
+        <li><a href="#1"><img src="assets/images/icon-1.png" alt=""> <em>Homepage</em></a></li>
+        <li><a href="#2"><img src="assets/images/icon-2.png" alt=""> <em>About ME</em></a></li>
+        <li><a href="#3"><img src="assets/images/icon-3.png" alt=""> <em>MY Gallery</em></a></li>
+        <li><a href="#4"><img src="assets/images/icon-4.png" alt=""> <em>Contact ME</em></a></li>
+    </ul>
+</nav>
+
+<div class="slides">
+    <div class="slide" id="1">
+        <div id="slider-wrapper">
+            <div id="image-slider">
+                <ul>
+                    <li class="active-img">
+                        <div class="slide-caption">
+                            <h2>Astrofotografie</h2>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide-caption">
+                            <h6>Peisaje</h6>
+                            <h2>Rurale</h2>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide-caption">
+                            <h6>Peisaje</h6>
+                            <h2>Urbane</h2>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="thumbnail">
+                <ul>
+                    <li class="active"><img src="storage/images/2-denoise1.jpg" alt="" /></li>
+                    <li><img src="storage/images/DSC_3735.jpg" alt="" /></li>
+                    <li><img src="storage/images/DSC_2608.jpg" alt="" /></li>
+                </ul>
+            </div>
         </div>
-    </body>
+    </div>
+    <div class="slide" id="2">
+        <div class="content second-content">
+            <div id='tabs'>
+                <ul>
+                    <li><a href='#tabs-1'><span class='fa fa-users'></span></a></li>
+                    <li><a href='#tabs-2'><span class='fa fa-users'></span></a></li>
+                    <li><a href='#tabs-3'><span class='fa fa-users'></span></a></li>
+                </ul>
+                <section class='tabs-content'>
+                    <article id='tabs-1'>
+                        <h2>Cine am fost?</h2>
+                        <p>Am terminat liceul in 2016 la Harlau cu note "mari", sa zicem :)))). Am urmat facultatea de Matematica din Iasi.</p>
+                    </article>
+                    <article id='tabs-2'>
+                        <h2>Cine sunt?</h2>
+                        <p>Sunt student la Master la facultatea de Matematica din Iasi.</p>
+                        <p>Sunt programator la DUK-TECH.</p>
+                         </article>
+                    <article id='tabs-3'>
+                        <h2>Cine voi fi?</h2>
+                        <p>Daca iti place ceea ce fac imi poti da un mesaj de incurajare in sectiunea de Contact.</p>
+                        <p>Daca chiar iti place ceea ce fac atunci te invit sa imi dai un mail pe olariudumitrualexandru@gmail.com pentru o colaborare.</p>
+                         </article>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="slide" id="3">
+        <div class="content third-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="owl-carousel owl-theme" id="galerie">
+                           <!-- <galery-posts></galery-posts>-->
+                             <?php
+                        try{
+                            $nr=count($post);
+                            $to_wright="";
+                        for ($i=0;$i<9;$i++){
+                            
+                            $url="./storage/".$post[$i]->url;
+                            $full_post="./post/".$post[$i]->id;
+                            $titlu=$post[$i]->title;
+                            $to_wright=$to_wright.'<div class="col-md-12">
+                                            <div class="featured-item">
+                                                <a href="'.$full_post.'">
+                                                    <img src="'.$url.'"alt="">
+                                                </a>
+                                    <div class="down-content">
+                                    <h4>'.$titlu.'</h4>
+                                            </div>
+                                        </div></div>';
+                            }
+                        }catch (Exception $exception){
+                            echo var_dump($exception->getMessage());
+                        }
+                                    echo $to_wright??"null";
+
+                        ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide" id="4">
+        <div class="content fourth-content">
+            <div class="container-fluid">
+                <form id="contact" action="messages" method="post">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Say Hello!</h2>
+                        </div>
+                        <div class="col-md-6">
+                            <fieldset>
+                                <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
+                            </fieldset>
+                        </div>
+                        <div class="col-md-6">
+                            <fieldset>
+                                <input name="email" type="text" class="form-control" id="email" placeholder="Your email..." required="">
+                            </fieldset>
+                        </div>
+                        <div class="col-md-12">
+                            <fieldset>
+                                <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                            </fieldset>
+                        </div>
+                        <div class="col-md-12">
+                            <fieldset>
+                                <button type="submit" id="form-submit" class="button">Send Now</button>
+                            </fieldset>
+                        </div>
+                        @csrf
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- Additional Scripts -->
+<script src="assets/js/owl.js"></script>
+<script src="assets/js/accordations.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function() {
+
+        // navigation click actions
+        $('.scroll-link').on('click', function(event){
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        // scroll to top action
+        $('.scroll-top').on('click', function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop:0}, 'slow');
+        });
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+
+    });
+    // scroll function
+    function scrollToID(id, speed){
+        var offSet = 0;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({scrollTop:targetOffset}, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
+    if (typeof console === "undefined") {
+        console = {
+            log: function() { }
+        };
+    }
+    function getMyPics(){
+
+        fetch("./post").then(function(response) {
+            console.log(response);
+            response.text().then(function (res){
+                let posts=JSON.parse(res);
+                console.log(posts);
+                var galerie=document.getElementById('galerie');
+                for (let i=0;i<posts.length;i++){
+                    console.log(posts[i]);
+                    var elem=document.createElement("div");
+                    elem.classList.add("col-md-12");
+
+                   var elementfi=document.createElement("div")
+                       elementfi.classList.add("featured-item");
+
+                   var a=document.createElement("a");
+                    a.href = "./post/"+posts[i].id;
+
+
+                    var img=document.createElement("img");
+                    img.src="./storage/"+posts[i].url;
+                    img.alt="";
+
+                    var dwn_cnt=document.createElement("div")
+                        dwn_cnt.classList.add("down-content");
+
+                    var h4=document.createElement("H4");
+                    var t4 = document.createTextNode(posts[i].title);
+                    h4.appendChild(t4);
+                    var h6=document.createElement("H6");
+                    var t6 = document.createTextNode(posts[i].description);
+                    h4.appendChild(t6);
+
+                    dwn_cnt.appendChild(h4)
+                    dwn_cnt.appendChild(h6)
+                    a.appendChild(img);
+                    elementfi.appendChild(a);
+                    elementfi.appendChild(dwn_cnt);
+                    elem.appendChild(elementfi)
+                    galerie.appendChild(elem);
+                    console.log(elem);
+                }
+            })
+        });
+    }
+</script>
+</div>
+</body>
+
 </html>
+
