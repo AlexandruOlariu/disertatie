@@ -1,41 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Tooplate">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
-
-    <title>Alex Olariu</title>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JX0XYGTTWZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JX0XYGTTWZ');
-</script>
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/tooplate-main.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-
-
-    <script src="{{ asset('js/app.js') }}" defer></script>
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-</head>
-<!--
-Tooplate 2113 Earth
-https://www.tooplate.com/view/2113-earth
--->
+@include('bladeComps/home_head')
 <body>
 <div id="app">
 <div class="sequence">
@@ -139,12 +102,17 @@ https://www.tooplate.com/view/2113-earth
                         for ($i=0;$i<9;$i++){
 
                             $url="./storage/".$post[$i]->url;
+                            if(strlen($post[$i]->url_low_res)>1){
+                                $url_to_show="./storage/".$post[$i]->url_low_res;
+                            }else{
+                                $url_to_show="./storage/".$post[$i]->url;
+                            }
                             $full_post="./post/".$post[$i]->id;
                             $titlu=$post[$i]->title;
                             $to_wright=$to_wright.'<div class="col-md-12">
                                             <div class="featured-item">
                                                 <a href="'.$full_post.'">
-                                                    <img src="'.$url.'"alt="">
+                                                    <img src="'.$url_to_show.'" alt="'.$post[$i]->alt.'">
                                                 </a>
                                     <div class="down-content">
                                     <h4>'.$titlu.'</h4>
@@ -152,9 +120,9 @@ https://www.tooplate.com/view/2113-earth
                                         </div></div>';
                             }
                         }catch (Exception $exception){
-                            echo var_dump($exception->getMessage());
+                            \Illuminate\Support\Facades\Log::info($exception);
                         }
-                                    echo $to_wright??"null";
+                                    echo $to_wright??"";
 
                         ?>
                     </div>

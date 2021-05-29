@@ -104,16 +104,18 @@ class PostController extends Controller
         try{
         if($request->has('url')) {
             $post->update([
+                'url_low_res'=>$request->url->store('uploads_low_res', 'public'),
                 'url' => $request->url->store('uploads', 'public'),
             ]);
-            $image = Image::make(public_path('storage/' . $post->url));//->fit(300, 300, null, 'top-left');
+            $image = Image::make(public_path('storage/' . $post->url));
 
             $image->save();
+            $image_low_res = Image::make(public_path('storage/' . $post->url_low_res));//->fit(300, 300, null, 'top-left');
+
+            $image_low_res->save();
         }
         }catch (\Exception $e){
-            Log::info(public_path('storage/'));
-            Log::info(json_decode(json_encode($e->getMessage())));
-
+            Log::info($e);
         }
     }
     public function validateRequest($request){

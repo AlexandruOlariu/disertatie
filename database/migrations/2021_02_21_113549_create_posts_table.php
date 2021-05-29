@@ -15,12 +15,13 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->string('title')->default("");
-            $table->string('url')->default("");
-            $table->text('description')->default("");
-            $table->string('tag')->default("");
-            $table->text('hashtags')->default("");
-            $table->string('category')->default("");
+            $table->string('title')->default("")->nullable();
+            $table->string('url')->default("")->nullable();
+            $table->string('url_low_res')->default("")->nullable();
+            $table->text('description')->default("")->nullable();
+            $table->string('tag')->default("")->nullable();
+            $table->string('alt')->default("")->nullable();
+            $table->string('category')->default("")->nullable();
             $table->timestamps();
         });
     }
