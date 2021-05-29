@@ -36,10 +36,5 @@ Route::get('register',function (){
     return view('/Login');
 });
 
-
-
-
-
-
-
 Route::any('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('sitemap',[App\Http\Controllers\Controller::class,'sitemap'])->name('sitemap');

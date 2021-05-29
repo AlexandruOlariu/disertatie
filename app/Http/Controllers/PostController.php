@@ -45,8 +45,9 @@ class PostController extends Controller
     {
         try {
             $post = Post::create($this->validateRequest($request));
-            $this->storeImage($request, $post);
+            if($this->storeImage($request, $post)){
             return response()->json("ok", 200);
+            }
         } catch (\Exception $e) {
             return response()->json(["err" => $e->getMessage()], 500);
         }
@@ -105,19 +106,31 @@ class PostController extends Controller
     {
         try {
             if ($request->has('url')) {
+                $postName=str_replace(' ',"_",strtolower($request->alt))."_".$post->id;
+                if(strlen($postName)<1){
+                    $postName=$post->id;
+                }
                 $post->update([
-                    'url_low_res' => $request->url->store('uploads_low_res', 'public'),
-                    'url' => $request->url->store('uploads', 'public'),
+                    'url_low_res' => 'uploads_low_res/'.$postName,
+                    'url' => 'uploads/'.$postName,
                 ]);
-                $image = Image::make(public_path('storage/' . $post->url));
-                $image->save();
-                $image_low_res = Image::make(public_path('storage/' . $post->url_low_res))
-                    ->resize(1080, 1920);
-                $image_low_res->save();
+                $local_upload='storage/'.$request->url->store('uploads_from_local','public');
+
+                $imageMaker=Image::make(public_path($local_upload));
+
+                $image = $imageMaker;
+                $image->save(public_path('storage/uploads/'.$postName.'.jpg'),100);
+
+                $image_low_res = $imageMaker->resize(null, 1080, function ($constraint) {
+                    $constraint->aspectRatio();
+                });
+                $image_low_res->save(public_path('storage/uploads_low_res/'.$postName.'.jpg'),80);
+                return true;
             }
         } catch (\Exception $e) {
-            Log::info($e);
+            return false;
         }
+        return false;
     }
 
     public function validateRequest($request)

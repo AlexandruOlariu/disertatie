@@ -1,5 +1,9 @@
 @include('bladeComps/home_head')
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5RJKHN"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <div id="app">
 <div class="sequence">
 
@@ -99,7 +103,7 @@
                         try{
                             $nr=count($post);
                             $to_wright="";
-                        for ($i=0;$i<9;$i++){
+                        for ($i=0;$i<count($post);$i++){
 
                             $url="./storage/".$post[$i]->url;
                             if(strlen($post[$i]->url_low_res)>1){

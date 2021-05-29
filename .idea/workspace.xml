@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="81f53a85-9719-449a-8757-d76bd1758e54" name="Default Changelist" comment="seo updates">
+    <list default="true" id="81f53a85-9719-449a-8757-d76bd1758e54" name="Default Changelist" comment="seo updates with images">
+      <change afterPath="$PROJECT_DIR$/config/sitemap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/sitemap/styles/google-news.xsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/sitemap/styles/mobile.xsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/sitemap/styles/sitemapindex.xsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/sitemap/styles/xml.xsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/sitemap/google-news.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/sitemap/html.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/sitemap/ror-rdf.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/sitemap/ror-rss.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/sitemap/sitemapindex.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/sitemap/txt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/sitemap/xml-mobile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/sitemap/xml.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Disertatie.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Disertatie.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Components/mine/NewPost.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Components/mine/NewPost.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/bladeComps/home_head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bladeComps/home_head.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +36,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
@@ -128,6 +152,7 @@
       <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/laravelium/sitemap" />
     </include_path>
   </component>
   <component name="ProjectId" id="1tCWBxZZeSXoocCArGBHKJBOU2A" />
@@ -164,7 +189,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622273423818</updated>
-      <workItem from="1622273427407" duration="12729000" />
+      <workItem from="1622273427407" duration="22757000" />
     </task>
     <task id="LOCAL-00001" summary="Updates">
       <created>1622274535819</created>
@@ -187,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622285919561</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="seo updates with images">
+      <created>1622289939648</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1622289939648</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +243,7 @@
     <MESSAGE value="Updates" />
     <MESSAGE value="tot update-uri" />
     <MESSAGE value="seo updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="seo updates" />
+    <MESSAGE value="seo updates with images" />
+    <option name="LAST_COMMIT_MESSAGE" value="seo updates with images" />
   </component>
 </project>
