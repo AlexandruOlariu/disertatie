@@ -38,4 +38,12 @@ class Controller extends BaseController
         // show your sitemap (options: 'xml' (default), 'html', 'txt', 'ror-rss', 'ror-rdf')
         return $sitemap->render('xml');
     }
+    public function index(){
+        try {
+            $post=\App\Models\Post::all();
+        }catch (\Exception $e){
+            $post="NU MERGE";
+        }
+        return view((new PostController())->getView('welcome'),compact('post'));
+    }
 }

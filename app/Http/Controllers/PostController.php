@@ -13,6 +13,18 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function getView($viewName)
+    {
+        if (request()->segment(1) == 'amp') {
+            if (view()->exists($viewName . '-amp')) {
+                $viewName .= '-amp';
+            } else {
+                abort(404);
+            }
+        }
+        return $viewName;
+    }
+
     public function getAllPosts()
     {
         $post = Post::all();
@@ -61,7 +73,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        return view('single_image', compact('post'));
+        return view($this->getView('single_image'), compact('post'));
         //return response()->json($post,200);
     }
 

@@ -19,7 +19,6 @@ class CreatePostsTable extends Migration
             $table->string('url')->default("")->nullable();
             $table->string('url_low_res')->default("")->nullable();
             $table->text('description')->default("")->nullable();
-            $table->string('tag')->default("")->nullable();
             $table->string('alt')->default("")->nullable();
             $table->string('category')->default("")->nullable();
             $table->timestamps();
