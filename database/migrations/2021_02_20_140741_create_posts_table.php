@@ -19,7 +19,7 @@ class CreatePostsTable extends Migration
             $table->string('url')->default(null);
             $table->text('description')->default(null);
             $table->string('tag')->default(null);
-            $table->text('hashtags')->default(null);
+            $table->text('alt')->default(null);
             $table->timestamps();
         });
     }

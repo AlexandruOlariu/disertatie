@@ -18,7 +18,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 
-    <title>Alex Olariu</title>
+    <title>Photography Alex Olariu</title>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -43,7 +43,11 @@
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/tooplate-main.css">
     <link rel="stylesheet" href="assets/css/owl.css">
-
+    <!--Apple Icons-->
+    <link rel=”apple-touch-icon” href=”assets/apple/apple-touch-icon.png” />
+    <link rel=”apple-touch-icon” sizes=”72×72″ href=”assets/apple/apple-touch-icon.png” />
+    <link rel=”apple-touch-icon” sizes=”114×114″ href=”assets/apple/apple-touch-icon.png” />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
     <script src="{{ asset('js/app.js') }}" defer></script>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">

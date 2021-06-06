@@ -1,30 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="81f53a85-9719-449a-8757-d76bd1758e54" name="Default Changelist" comment="seo updates with images">
-      <change afterPath="$PROJECT_DIR$/public/assets/css-amp/flex-slider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css-amp/fontawesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css-amp/owl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css-amp/tooplate-main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js-amp/accordations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js-amp/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js-amp/owl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/bladeComps/home_head-amp.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/single_image-amp.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/welcome-amp.blade.php" afterDir="false" />
+    <list default="true" id="81f53a85-9719-449a-8757-d76bd1758e54" name="Default Changelist" comment="fin #1">
+      <change afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/apple/apple-touch-icon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_21_113549_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_21_113549_create_posts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_20_140741_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_20_140741_create_posts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/bladeComps/home_head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bladeComps/home_head.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -160,6 +151,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -191,7 +183,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622273423818</updated>
-      <workItem from="1622273427407" duration="30161000" />
+      <workItem from="1622273427407" duration="30561000" />
+      <workItem from="1622378838697" duration="1639000" />
+      <workItem from="1622438941214" duration="1333000" />
+      <workItem from="1622476080512" duration="3698000" />
+      <workItem from="1622878664054" duration="1413000" />
+      <workItem from="1622975445015" duration="873000" />
+      <workItem from="1622976367927" duration="47000" />
+      <workItem from="1622976431190" duration="240000" />
     </task>
     <task id="LOCAL-00001" summary="Updates">
       <created>1622274535819</created>
@@ -228,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622303394876</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fin #1">
+      <created>1622314160387</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1622314160387</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +250,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -253,6 +260,7 @@
     <MESSAGE value="tot update-uri" />
     <MESSAGE value="seo updates" />
     <MESSAGE value="seo updates with images" />
-    <option name="LAST_COMMIT_MESSAGE" value="seo updates with images" />
+    <MESSAGE value="fin #1" />
+    <option name="LAST_COMMIT_MESSAGE" value="fin #1" />
   </component>
 </project>

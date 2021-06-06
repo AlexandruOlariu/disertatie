@@ -4,6 +4,8 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5RJKHN"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="augJntma"></script>
 <div id="app">
 <div class="sequence">
 
@@ -25,10 +27,10 @@
 </div>
 <nav>
     <ul>
-        <li><a href="#1"><img src="assets/images/icon-1.png" alt=""> <em>Homepage</em></a></li>
-        <li><a href="#2"><img src="assets/images/icon-2.png" alt=""> <em>About ME</em></a></li>
-        <li><a href="#3"><img src="assets/images/icon-3.png" alt=""> <em>MY Gallery</em></a></li>
-        <li><a href="#4"><img src="assets/images/icon-4.png" alt=""> <em>Contact ME</em></a></li>
+        <li><a href="#1"><img src="assets/images/icon-1.png" alt="Homepage"> <em>Homepage</em></a></li>
+        <li><a href="#2"><img src="assets/images/icon-2.png" alt="About ME"> <em>About ME</em></a></li>
+        <li><a href="#3"><img src="assets/images/icon-3.png" alt="MY Gallery"> <em>MY Gallery</em></a></li>
+        <li><a href="#4"><img src="assets/images/icon-4.png" alt="Contact ME"> <em>Contact ME</em></a></li>
     </ul>
 </nav>
 
@@ -103,7 +105,7 @@
                         try{
                             $nr=count($post);
                             $to_wright="";
-                        for ($i=0;$i<count($post);$i++){
+                        for ($i=$nr-1;$i>=0;$i--){
 
                             $url="./storage/".$post[$i]->url;
                             if(strlen($post[$i]->url_low_res)>1){
@@ -162,6 +164,7 @@
                                 <button type="submit" id="form-submit" class="button">Send Now</button>
                             </fieldset>
                         </div>
+                        <div class="fb-like" data-href="https://facebook.com/dumitrualexandru.olariu/" data-width="" data-layout="button" data-action="like" data-size="large" data-share="true"></div>
                         @csrf
                 </form>
             </div>
